@@ -1,18 +1,17 @@
-//document.getElementById("count").innerText = 5
+//document.getElementById("count").innerText = 0
+
+let countEl = document.getElementById("count-el")
+let saveed = document.getElementById("save")
 
 let count = 0
 
-console.log(count)
+function increment( ){
+    count = count + 1
+    countEl.innerText = count
+    console.log(count)
+} 
 
-let bonusPoints = 50
-
-console.log(bonusPoints)
-
-bonusPoints = bonusPoints + 50 
-console.log(bonusPoints)
-
-bonusPoints = bonusPoints - 75
-console.log(bonusPoints)
-
-bonusPoints = bonusPoints + 45
-console.log(bonusPoints)
+function save() {
+    saveed.innerText = "saved"
+    console.log(saveed)
+}
