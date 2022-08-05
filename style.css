@@ -19,10 +19,16 @@ body {
 }
 
 .btn {
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 button{
+    width: 100px;
+    height: 40px;
     border: none;
     padding-top: 10px;
     padding-bottom: 10px;
