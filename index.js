@@ -1,17 +1,22 @@
 //document.getElementById("count").innerText = 0
 
 let countEl = document.getElementById("count-el")
-let saveed = document.getElementById("save")
+let saved = document.getElementById("save-el")
+let history = document.getElementById("history")
 
 let count = 0
 
 function increment( ){
     count += 1
-    countEl.innerText = count
+    countEl.textContent = count
     console.log(count)
+    saved.textContent = "unsaved"
 } 
 
 function save() {
-    saveed.innerText = "saved"
-    console.log(saveed)
+    saved.innerText = "saved"
+    let countStr = count + " - "
+    history.textContent += countStr
+    countEl.textContent = 0
+    count = 0 
 }
